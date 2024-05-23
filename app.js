@@ -30,7 +30,7 @@ function copyPassword() {
     //     timer: 1000
     //   });
     let showMessage = document.getElementById('showMessage');
-    showMessage.innerText = 'Copied Password';
+    showMessage.innerText = 'Copied Password!';
     setTimeout (() => {
     showMessage.innerText = '';
     },1000);
