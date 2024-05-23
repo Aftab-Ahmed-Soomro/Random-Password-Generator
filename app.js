@@ -23,4 +23,15 @@ function generatePassword() {
 function copyPassword() {
     passwordBox.select();
     document.execCommand('copy');
+    // Swal.fire({
+    //     icon: "success",
+    //     title: "Copied Password",
+    //     showConfirmButton: false,
+    //     timer: 1000
+    //   });
+    let showMessage = document.getElementById('showMessage');
+    showMessage.innerText = 'Copied Password';
+    setTimeout (() => {
+    showMessage.innerText = '';
+    },1000);
 }
